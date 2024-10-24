@@ -1,2 +1,2 @@
-raki 20
-cr 56
+rakin 100
+arb 10

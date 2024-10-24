@@ -55,12 +55,11 @@ int main()
         my_file1.close();
 
         // Display the read data
-        for (int i = 0; i < no_of_student; i++) {
-            cout << "Name: " << student[i].name
-                      << ", marks: " << student[i].marks<<endl;
+        for (const auto& students : student) {
+            cout << "Name: " << students.name<< ", marks: " << students.marks<<endl;
         }
     } else {
-        cout << "Unable to open file for reading." << std::endl;
+        cout << "Unable to open file for reading." << endl;
     }
 
 }
