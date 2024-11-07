@@ -1,2 +1,2 @@
-rakin 100
-arb 10
+Rkin 89
+rakin2 92
