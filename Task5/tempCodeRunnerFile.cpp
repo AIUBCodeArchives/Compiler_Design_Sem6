@@ -1,0 +1,2 @@
+
+                    word += line[i];

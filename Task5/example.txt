@@ -1,0 +1,6 @@
+int main ( ) {
+float a , b ;
+int sum ;
+sum = a + b ;
+cout << sum ;
+}

@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-
+//hehe
 std::string   line;
 while(std::getline(std::cin,line))
 {
