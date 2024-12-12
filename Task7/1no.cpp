@@ -2,31 +2,30 @@
 #include <regex>
 #include <string>
 
-int main() {
-    // Regular expression pattern
-    std::string pattern;
-    std::cout << "Enter a regex pattern: ";
-    std::getline(std::cin, pattern);
+using namespace std;
 
-    // Compile the regex
-    std::regex re;
+int main() {
+    
+    string pattern;
+    cout << "Enter an Expression: ";
+    getline(cin, pattern);
+
+    regex re;
     try {
-        re = std::regex(pattern);
-    } catch (const std::regex_error& e) {
-        std::cerr << "Invalid regular expression: " << e.what() << std::endl;
+        re = regex(pattern);
+    } catch (const regex_error& e) {
+        cerr << "Invalid regular expression: " << e.what() << endl;
         return 1;
     }
 
-    // Input string to test
-    std::string input;
-    std::cout << "Enter a string to test: ";
-    std::getline(std::cin, input);
+    string input;
+    cout << "Enter a string to test: ";
+    getline(cin, input);
 
-    // Check for a match
-    if (std::regex_match(input, re)) {
-        std::cout << "The input string matches the pattern!" << std::endl;
+    if (regex_match(input, re)) {
+        cout << "The input string matches the pattern!" << endl;
     } else {
-        std::cout << "The input string does NOT match the pattern." << std::endl;
+        cout << "The input string does NOT match the pattern." << endl;
     }
 
     return 0;
