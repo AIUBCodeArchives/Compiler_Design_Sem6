@@ -5,8 +5,9 @@
 using namespace std;
 
 int main() {
-    
+
     string pattern;
+    //Any expression manually puting.
     cout << "Enter an Expression: ";
     getline(cin, pattern);
 
